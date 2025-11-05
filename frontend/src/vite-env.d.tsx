@@ -5,8 +5,11 @@ interface ImportMeta {
 }
 
 interface ImportMetaEnv {
-  // Esta línea es la que soluciona tu error en api.ts
+  // Agrega aquí las variables de entorno que usas
+  // (Deben empezar con VITE_ por seguridad)
+  // Por ejemplo, si usas VITE_API_URL en 'api.ts':
   readonly VITE_API_URL: string;
 
-  // Agrega aquí cualquier otra variable de entorno que uses
+  // Agrega cualquier otra que necesites
+  // readonly VITE_OTRA_VARIABLE: string;
 }
