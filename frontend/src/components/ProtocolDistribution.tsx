@@ -60,9 +60,9 @@ export default function ProtocolDistribution() {
             fill="#8884d8"
             dataKey="value"
           >
-            {data.map((index) => (
-              <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-            ))}
+            datos.map((_entrada, index) => (
+              <MiComponente key={index} />
+            ))
           </Pie>
           <Tooltip
             contentStyle={{
