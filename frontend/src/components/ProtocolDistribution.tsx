@@ -60,7 +60,7 @@ export default function ProtocolDistribution() {
             fill="#8884d8"
             dataKey="value"
           >
-            {data.map((_entry, index) => (
+            {data.map((_, index) => (
               <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
             ))}
           </Pie>
@@ -78,4 +78,3 @@ export default function ProtocolDistribution() {
     </div>
   )
 }
-
